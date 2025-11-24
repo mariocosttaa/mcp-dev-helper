@@ -1,0 +1,17 @@
+# MCP Dev Helper Configuration Example
+# Copy this file to ~/.mcp-dev-helper/config.yml and update with your project paths
+
+projects:
+  - id: 'my-api'
+    path: '/absolute/path/to/my-api/docs'
+  - id: 'my-frontend'
+    path: '/absolute/path/to/my-frontend/docs'
+  - id: 'my-library'
+    path: '/absolute/path/to/my-library/docs'
+
+# Notes:
+# - Each project must have a unique 'id'
+# - Paths can be absolute or relative to your home directory
+# - The server will watch all .md files in these directories
+# - Changes to this file will automatically reload the server configuration
+

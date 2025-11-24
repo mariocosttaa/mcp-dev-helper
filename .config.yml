@@ -1,0 +1,17 @@
+# mcp-dev-helper Configuration
+# This file should be copied to ~/.mcp-dev-helper/config.yml
+
+projects:
+  - id: 'api'
+    path: '/Users/mario/Documents/dev-projects/mcp-dev-helper/docs/api'
+  - id: 'full-app'
+    path: '/Users/mario/Documents/dev-projects/mcp-dev-helper/docs/full-app'
+  - id: 'react-native'
+    path: '/Users/mario/Documents/dev-projects/mcp-dev-helper/docs/react-native'
+
+# Notes:
+# - Each project must have a unique 'id'
+# - Paths can be absolute or relative to your home directory
+# - The server will watch all .md files in these directories
+# - Changes to this file will automatically reload the server configuration
+

@@ -1,0 +1,29 @@
+{
+    "name": "mcp-dev-helper",
+    "version": "0.1.0",
+    "description": "Ultra-fast local documentation server for developers",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "npm run build --workspaces",
+        "start": "cd packages/core && node dist/cli.js start",
+        "stop": "cd packages/core && node dist/cli.js stop",
+        "dev": "cd packages/core && npm run dev",
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "format": "prettier --write \"**/*.{ts,js,json,md,yml,yaml}\"",
+        "format:check": "prettier --check \"**/*.{ts,js,json,md,yml,yaml}\""
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@typescript-eslint/parser": "^6.21.0",
+        "eslint": "^8.56.0",
+        "prettier": "^3.2.5",
+        "typescript": "^5.3.3"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}

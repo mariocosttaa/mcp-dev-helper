@@ -1,0 +1,30 @@
+{
+  "name": "mcp-dev-helper",
+  "version": "0.1.0",
+  "description": "Ultra-fast local documentation server for developers",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-dev-helper": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js start"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2",
+    "yaml": "^2.4.0",
+    "zod": "^3.22.4",
+    "chokidar": "^3.6.0",
+    "marked": "^12.0.0",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+

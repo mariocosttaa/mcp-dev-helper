@@ -1,0 +1,39 @@
+{
+    "name": "mcp-dev-helper-vscode",
+    "displayName": "MCP Dev Helper",
+    "description": "View documentation directly in VS Code",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:mcp-dev-helper.showDoc"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [{
+            "command": "mcp-dev-helper.showDoc",
+            "title": "MCP Dev Helper: Show Documentation"
+        }],
+        "keybindings": [{
+            "command": "mcp-dev-helper.showDoc",
+            "key": "alt+d",
+            "when": "editorTextFocus"
+        }]
+    },
+    "scripts": {
+        "build": "tsc -p ./",
+        "vscode:prepublish": "npm run build",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.24",
+        "@types/vscode": "^1.74.0",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {}
+}
